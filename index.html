@@ -6,36 +6,52 @@
     <title>Movie Finder</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="navyBackground">
-    <header style="display: flex; justify-content: center; align-items: center;">
-        <img src="assets/logo/movieFinderYellowRound.png" alt="" width="4%"> 
-        <h1> Movie Finder</h1>
-    </header>
-
-    <main class="loading screen">
-        <div>
-            <input type="text">
-            <button>search</button>
-            <button>Random</button>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="logo-container">
+            <img src="assets/logo/movieFinderYellowRound.png" alt="MovieFind Logo" class="loading-logo">
+            <div class="loading-bar"></div>
         </div>
+    </div>
 
-        <div>
-            <button>Action</button>
-            <button>Comedy</button>
-            <button>Thriller</button>
-            <button>Romance</button>
-        </div>
+    <!-- Main Content -->
+    <div id="mainContent" class="main-content" style="display: none;">
+        <header>
+            <h1 class="page-title">MOVIE FINDER</h1>
+        </header>
 
-        <div class="content">
-            <!-- fetch from dynamic content here? -->
-        </div>
-    </main>
+        <main>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search Movie by name or Imdb Id...">
+                <button id="searchBtn" class="btn btn-search">search</button>
+                <button id="randomBtn" class="btn btn-random">random</button>
+            </div>
 
-    <center><footer>
-        <p>created by Maalik Hassan </p>
-        <p> Github link </p>
-        <p>2025</p>
-    </footer></center>
+            <div class="genre-buttons">
+                <button class="btn btn-genre" data-genre="action">Action</button>
+                <button class="btn btn-genre" data-genre="comedy">Comedy</button>
+                <button class="btn btn-genre" data-genre="romance">Romance</button>
+            </div>
+
+            <div id="movieGrid" class="movie-grid">
+                <!-- Movie cards will be dynamically inserted here -->
+                <div class="movie-card"></div>
+                <div class="movie-card"></div>
+                <div class="movie-card"></div>
+                <div class="movie-card"></div>
+                <div class="movie-card"></div>
+                <div class="movie-card"></div>
+                <div class="movie-card"></div>
+                <div class="movie-card"></div>
+                <div class="movie-card"></div>
+                <div class="movie-card"></div>
+                <div class="movie-card"></div>
+                <div class="movie-card"></div>
+            </div>
+        </main>
+    </div>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>

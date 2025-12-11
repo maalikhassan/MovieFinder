@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details - Movie Finder</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/details.css">
+</head>
+<body>
+    <div class="details-container">
+        <header>
+            <h1 class="page-title">MOVIE FINDER</h1>
+        </header>
+
+        <main class="details-main">
+            <button id="backBtn" class="btn btn-back">← Back to Search</button>
+            
+            <div class="details-content">
+                <div class="movie-poster-section">
+                    <img id="moviePoster" src="" alt="Movie Poster" class="details-poster">
+                </div>
+
+                <div class="movie-info-section">
+                    <h2 id="movieTitle" class="details-title">Movie Title</h2>
+                    
+                    <div class="info-group">
+                        <label>Year:</label>
+                        <span id="movieYear">-</span>
+                    </div>
+
+                    <div class="info-group">
+                        <label>Genre:</label>
+                        <span id="movieGenre">-</span>
+                    </div>
+
+                    <div class="info-group">
+                        <label>Director:</label>
+                        <span id="movieDirector">-</span>
+                    </div>
+
+                    <div class="info-group">
+                        <label>Cast:</label>
+                        <span id="movieCast">-</span>
+                    </div>
+
+                    <div class="info-group">
+                        <label>Rating:</label>
+                        <span id="movieRating">-</span>
+                    </div>
+
+                    <div class="info-group">
+                        <label>Runtime:</label>
+                        <span id="movieRuntime">-</span>
+                    </div>
+
+                    <div class="info-group full-width">
+                        <label>Plot:</label>
+                        <p id="moviePlot">-</p>
+                    </div>
+
+                    <div class="info-group">
+                        <label>IMDb ID:</label>
+                        <span id="movieImdbId">-</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/details.js"></script>
+</body>
+</html>
